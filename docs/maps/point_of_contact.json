@@ -19,5 +19,11 @@
   "cycle_ranges": {
     "min": 1,
     "max": 14
-  }
+  },
+  "images": [
+    { "min": 1, "max": 5, "file": "images/POC1.png" },
+    { "min": 6, "max": 9, "file": "images/POC2.png" },
+    { "min": 10, "max": 14, "file": "images/POC3.png" }
+  ]
 }
+
