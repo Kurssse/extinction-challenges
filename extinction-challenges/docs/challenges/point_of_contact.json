@@ -1,0 +1,179 @@
+{
+  "map": "point_of_contact",
+  "challenges": [
+    {
+      "ref": "spend_10k",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 10, 11, 12, 13, 14],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "crater_lung"]
+    },
+    {
+      "ref": "take_no_damage",
+      "allowedinsolo": true,
+      "allowed_cycles": [1],
+      "allowed_hives": ["mini_lung"]
+    },
+    {
+      "ref": "kill_leper",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 6, 7, 8, 10, 11, 12, 13, 14],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "crater_lung"]
+    },
+    {
+      "ref": "spend_no_money",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+     {
+      "ref": "no_reloads",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6"]
+    },
+    {
+      "ref": "no_abilities",
+      "allowedinsolo": true,
+      "allowed_cycles": [4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "melee_5_goons",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4", "city_lung_5"]
+    },
+    {
+      "ref": "melee_spitter",
+      "allowedinsolo": true,
+      "allowed_cycles": [12, 13, 14],
+      "allowed_hives": ["lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6", "crater_lung"]
+    },
+    {
+      "ref": "spend_20k",
+      "allowedinsolo": true,
+      "allowed_cycles": [14],
+      "allowed_hives": ["crater_lung"]
+    },
+    {
+      "ref": "no_stuck_drill",
+      "allowedinsolo": true,
+      "allowed_cycles": [13, 14],
+      "allowed_hives": ["lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6", "crater_lung"]
+    },
+    {
+      "ref": "no_laststand",
+      "allowedinsolo": false,
+      "allowed_cycles": [2, 3, 4, 6, 7],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "no_bleedout",
+      "allowedinsolo": false,
+      "allowed_cycles": [7, 8, 10, 11, 12, 13, 14],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6", "crater_lung"]
+    },
+    {
+      "ref": "kill_10_with_propane",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "kill_10_with_traps",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 6, 7, 8, 10, 11, 12, 13, 14],
+      "allowed_hives": ["lodge_lung_1", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6", "crater_lung"]
+    },
+    {
+      "ref": "stay_prone",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "protect_player",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 8, 10, 11, 12, 13, 14],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6", "crater_lung"]
+    },
+    {
+      "ref": "avoid_minion_explosion",
+      "allowedinsolo": true,
+      "allowed_cycles": [7, 8, 10],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6"]
+    },
+    {
+      "ref": "75_percent_accuracy",
+      "allowedinsolo": true,
+      "allowed_cycles": [2, 3, 4],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6"]
+    },
+    {
+      "ref": "pistols_only",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 6, 7],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "shotguns_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [3, 4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "lmgs_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 8],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "snipers_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [3, 4, 10],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6"]
+    },
+    {
+      "ref": "kill_10_with_turrets",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3"]
+    },
+    {
+      "ref": "kill_airborne_aliens",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_4", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3"]
+    },
+    {
+      "ref": "melee_only",
+      "allowedinsolo": true,
+      "allowed_cycles": [1],
+      "allowed_hives": ["mini_lung"]
+    },
+    {
+      "ref": "50_percent_accuracy",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 10, 11, 12, 13, 14],
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6", "crater_lung"]
+    },
+    {
+      "ref": "smg_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [3, 4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "ar_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [3, 4, 6, 7, 8],
+      "allowed_hives": ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6", "city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
+    },
+    {
+      "ref": "barrier_hive",
+      "allowedinsolo": true,
+      "allowed_cycles": [5, 9],
+      "allowed_hives": ["lodge_lung_3", "city_lung_5"]
+    }
+  ]
+}
