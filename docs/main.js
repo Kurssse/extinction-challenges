@@ -4,10 +4,8 @@ let challenges = [];
 function loadChallenges(map, difficulty) {
     const path = `challenges/${map}_${difficulty}.json`;
     return fetch(path)
-        .then(response => response.json())
-        .then(data => {
-            challenges = data.challenges;
-        })
+        .then(r => r.json())
+        .then(data => challenges = data.challenges)
         .catch(err => {
             console.error("Failed to load JSON:", err);
             challenges = [];
@@ -15,49 +13,53 @@ function loadChallenges(map, difficulty) {
 }
 /* BUTTON CLICK */
 document.getElementById("run").addEventListener("click", () => {
-    const playerCount = Number(document.getElementById("players").value);
     const cycle = Number(document.getElementById("cycle").value);
-    const hive = document.getElementById("hive").value;
     const difficulty = document.getElementById("difficulty").value;
+    const playerCount = Number(document.getElementById("players").value);
 
-    // Load the correct JSON for the chosen difficulty
     loadChallenges("point_of_contact", difficulty).then(() => {
-        const context = {
-            players: Array.from({ length: playerCount }, () => ({
-                pistolsOnlyPrestige: false
-            })),
-            cycle: cycle,
-            hive: hive
-        };
-
-        const valid = getValidChallenges(challenges, context);
-        render(valid);
+        const grouped = getChallengesByHive(challenges, cycle, playerCount);
+        renderTable(grouped);
     });
 });
 
 /* FILTERING LOGIC */
-function getValidChallenges(challenges, context) {
-    const valid = [];
+function getChallengesByHive(challenges, cycle, playerCount) {
+    const result = {}; // hive -> array of challenges
 
     for (const c of challenges) {
-        if (context.players.length === 1 && !c.allowedinsolo) continue;
-        if (!c.allowed_cycles.includes(context.cycle - 1)) continue;
-        if (!c.allowed_hives.includes(context.hive)) continue;
+        // Skip if challenge is not allowed in solo and only 1 player
+        if (playerCount === 1 && !c.allowedinsolo) continue;
 
-        valid.push(c);
+        if (!c.allowed_cycles.includes(cycle)) continue;
+
+        for (const hive of c.allowed_hives) {
+            if (!result[hive]) result[hive] = [];
+            result[hive].push(c.ref);
+        }
     }
 
-    return valid;
+    return result;
 }
 
 /* DISPLAY RESULTS */
-function render(list) {
-    const out = document.getElementById("output");
+function renderTable(challengesByHive) {
+    const container = document.getElementById("output");
+    container.innerHTML = ""; // clear previous results
 
-    if (list.length === 0) {
-        out.textContent = "No valid challenges.";
-        return;
+    const table = document.createElement("table");
+    table.border = 1;
+    const header = table.insertRow();
+    header.insertCell().textContent = "Hive";
+    header.insertCell().textContent = "Challenges";
+
+    for (const [hive, chList] of Object.entries(challengesByHive)) {
+        const row = table.insertRow();
+        row.insertCell().textContent = hive;
+        row.insertCell().textContent = chList.join(", ");
     }
 
-    out.textContent = list.map(c => c.ref).join("\n");
+    container.appendChild(table);
 }
+
+
