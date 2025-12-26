@@ -1,0 +1,209 @@
+{
+  "map": "nightfall",
+  "challenges": [
+    {
+      "ref": "spend_10k",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06", "compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "kill_leper",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06", "compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "spend_no_money",
+      "allowedinsolo": true,
+      "allowed_cycles": [7, 8, 9],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06", "compound_hive_07", "compound_hive_08"]
+    },
+    {
+      "ref": "no_reloads",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05"]
+    },
+    {
+      "ref": "no_abilities",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06", "compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "melee_5_goons",
+      "allowedinsolo": true,
+      "allowed_cycles": [1, 2, 3, 4],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05"]
+    },
+    {
+      "ref": "melee_spitter",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06", "compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "spend_20k",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06", "compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "no_stuck_drill",
+      "allowedinsolo": true,
+      "allowed_cycles": [4, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06", "compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "no_laststand",
+      "allowedinsolo": false,
+      "allowed_cycles": [2, 3, 4],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05"]
+    },
+    {
+      "ref": "no_bleedout",
+      "allowedinsolo": false,
+      "allowed_cycles": [9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_05", "compound_hive_06", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "kill_10_with_traps",
+      "allowedinsolo": true,
+      "allowed_cycles": [4, 6, 7],
+      "allowed_hives": ["checkpoint_hive_02", "checkpoint_hive_03", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_07", "compound_hive_08"]
+    },
+    {
+      "ref": "stay_prone",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "protect_player",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "avoid_minion_explosion",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08"]
+    },
+    {
+      "ref": "pistols_only",
+      "allowedinsolo": true,
+      "allowed_cycles": [2, 3, 4],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05"]
+    },
+    {
+      "ref": "shotguns_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "lmgs_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [10, 11, 12, 13, 14],
+      "allowed_hives": ["facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "snipers_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [10, 11, 12, 13, 14],
+      "allowed_hives": ["facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "kill_10_with_turrets",
+      "allowedinsolo": true,
+      "allowed_cycles": [2, 3, 4],
+      "allowed_hives": ["checkpoint_hive_03", "checkpoint_hive_05"]
+    },
+    {
+      "ref": "kill_airborne_aliens",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "50_percent_accuracy",
+      "allowedinsolo": true,
+      "allowed_cycles": [1, 2, 3, 4],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05"]
+    },
+    {
+      "ref": "stay_within_area",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "kill_10_in_30",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "smg_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [4, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "ar_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [4, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "long_shot",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08"]
+    },
+    {
+      "ref": "focus_fire",
+      "allowedinsolo": false,
+      "allowed_cycles": [4, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "kill_marked",
+      "allowedinsolo": true,
+      "allowed_cycles": [4, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "healthy_kills",
+      "allowedinsolo": true,
+      "allowed_cycles": [4, 6, 7, 8, 9, 10, 11, 12, 13, 14],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08", "facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05", "facility_hive_07"]
+    },
+    {
+      "ref": "minion_preexplode",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 8, 9],
+      "allowed_hives": ["compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08"]
+    },
+    {
+      "ref": "kill_nodamage",
+      "allowedinsolo": true,
+      "allowed_cycles": [4, 6, 7, 8, 9],
+      "allowed_hives": ["checkpoint_hive_01", "checkpoint_hive_02", "checkpoint_hive_03", "checkpoint_hive_04", "checkpoint_hive_05", "compound_hive_01", "compound_hive_02", "compound_hive_03", "compound_hive_04", "compound_hive_05", "compound_hive_06","compound_hive_07", "compound_hive_08"]
+    },
+    {
+      "ref": "kill_spider",
+      "allowedinsolo": true,
+      "allowed_cycles": [5],
+      "allowed_hives": ["first_spider_fight"]
+    },
+    {
+      "ref": "kill_eggs",
+      "allowedinsolo": false,
+      "allowed_cycles": [5],
+      "allowed_hives": ["first_spider_fight"]
+    }
+  ]
+}
