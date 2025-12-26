@@ -16,6 +16,22 @@
     "13": ["facility_hive_01", "facility_hive_02", "facility_hive_03", "facility_hive_04", "facility_hive_05"],
     "14": ["facility_hive_07"]
   },
+  "cycle_names": {
+    "1": "Area 1 Hive 1",
+    "2": "Area 1 Hive 2",
+    "3": "Area 1 Hive 3",
+    "4": "Area 1 Hive 4",
+    "5": "First Spider",
+    "6": "Area 2 Hive 1",
+    "7": "Area 2 Hive 2",
+    "8": "Area 2 Hive 3",
+    "9": "Area 2 Hive 4",
+    "10": "Area 3 Hive 1",
+    "11": "Area 3 Hive 2",
+    "12": "Area 3 Hive 3",
+    "13": "Area 3 Hive 4",
+    "14": "Final Hive"
+  },
   "cycle_ranges": {
     "min": 1,
     "max": 14
@@ -26,4 +42,5 @@
     { "min": 10, "max": 14, "file": "images/NF3.png" }
   ]
 }
+
 
