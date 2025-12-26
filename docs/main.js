@@ -82,13 +82,17 @@ function renderTable(challengesByHive) {
         row.insertCell().textContent = hive;
 
         const cell = row.insertCell();
-        chList.forEach(ch => {
+        chList.forEach((ch, index) => {
             const span = document.createElement("span");
             span.textContent = ch;
             span.style.cursor = "pointer";
             span.style.marginRight = "5px";
             span.addEventListener("click", () => markUsed(ch));
             cell.appendChild(span);
+
+            if (index < chList.length - 1) {
+                cell.appendChild(document.createTextNode(" | "));
+            }
         });
     }
 
