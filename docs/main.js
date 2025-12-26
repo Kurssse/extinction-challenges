@@ -34,6 +34,10 @@ document.getElementById("run").addEventListener("click", () => {
     const difficulty = document.getElementById("difficulty").value;
     const playerCount = Number(document.getElementById("players").value);
 
+    // Update map image
+    document.getElementById("map-image").src = getMapImage(cycle);
+
+    // Load challenges and render table
     loadChallenges("point_of_contact", difficulty).then(() => {
         const grouped = getChallengesByHive(challenges, cycle, playerCount);
         renderTable(grouped);
@@ -122,3 +126,10 @@ function renderUsedList() {
 
 // Initial render
 renderUsedList();
+
+function getMapImage(cycle) {
+    if (cycle >= 1 && cycle <= 5) return "images/POC1.png";
+    if (cycle >= 6 && cycle <= 9) return "images/POC2.png";
+    if (cycle >= 10 && cycle <= 14) return "images/POC3.png";
+    return ""; // fallback, should not happen
+}
