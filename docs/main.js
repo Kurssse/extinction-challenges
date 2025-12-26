@@ -31,7 +31,7 @@ function getValidChallenges(challenges, context) {
 
     for (const c of challenges) {
         if (context.players.length === 1 && !c.allowedinsolo) continue;
-        if (!c.allowed_cycles.includes(context.cycle - 1)) continue;
+        if (!c.allowed_cycles.includes(context.cycle)) continue;
         if (!c.allowed_hives.includes(context.hive)) continue;
 
         valid.push(c);
@@ -51,3 +51,4 @@ function render(list) {
 
     out.textContent = list.map(c => c.ref).join("\n");
 }
+
