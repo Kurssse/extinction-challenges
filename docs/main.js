@@ -1,20 +1,3 @@
-const cycleHives = {
-    1: ["mini_lung"],
-    2: ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6"],
-    3: ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6"],
-    4: ["lodge_lung_1", "lodge_lung_2", "lodge_lung_4", "lodge_lung_5", "lodge_lung_6"],
-    5: ["lodge_lung_3"],
-    6: ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"],
-    7: ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"],
-    8: ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"],
-    9: ["city_lung_5"],
-    10: ["lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6"],
-    11: ["lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6"],
-    12: ["lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6"],
-    13: ["lake_lung_1", "lake_lung_2", "lake_lung_3", "lake_lung_4", "lake_lung_6"],
-    14: ["crater_lung"]
-};
-
 let challenges = [];
 
 /* LOAD JSON DATA */
@@ -30,22 +13,27 @@ function loadChallenges(map, difficulty) {
 }
 /* BUTTON CLICK */
 document.getElementById("run").addEventListener("click", () => {
-    const cycle = Number(document.getElementById("cycle").value);
-    const difficulty = document.getElementById("difficulty").value;
-    const playerCount = Number(document.getElementById("players").value);
+  const map = document.getElementById("map").value;
+  const difficulty = document.getElementById("difficulty").value;
+  const cycle = Number(document.getElementById("cycle").value);
+  const playerCount = Number(document.getElementById("players").value);
 
-    // Update map image
-    document.getElementById("map-image").src = getMapImage(cycle);
-
-    // Load challenges and render table
-    loadChallenges("point_of_contact", difficulty).then(() => {
-        const grouped = getChallengesByHive(challenges, cycle, playerCount);
-        renderTable(grouped);
-    });
+  Promise.all([
+    loadMapData(map),
+    loadChallenges(map, difficulty)
+  ]).then(() => {
+    const grouped = getChallengesByHive(
+      challenges,
+      cycle,
+      playerCount,
+      mapData.cycle_hives
+    );
+    renderTable(grouped);
+  });
 });
 
 /* FILTERING LOGIC */
-function getChallengesByHive(challenges, cycle, playerCount) {
+function getChallengesByHive(challenges, cycle, playerCount, cycleHives) {
     const result = {};
     const allowedHives = cycleHives[cycle] || [];
 
@@ -137,5 +125,29 @@ function getMapImage(cycle) {
     if (cycle >= 10 && cycle <= 14) return "images/POC3.png";
     return ""; // fallback, should not happen
 }
+
+let mapData = null;
+
+function loadMapData(map) {
+  return fetch(`maps/${map}.json`)
+    .then(r => r.json())
+    .then(data => {
+        mapData = data;
+        populateCycles();
+    });
+}
+
+function populateCycles() {
+  const cycleSelect = document.getElementById("cycle");
+  cycleSelect.innerHTML = "";
+
+  for (let i = mapData.cycle_ranges.min; i <= mapData.cycle_ranges.max; i++) {
+    const opt = document.createElement("option");
+    opt.value = i;
+    opt.textContent = i;
+    cycleSelect.appendChild(opt);
+  }
+}
+
 
 
