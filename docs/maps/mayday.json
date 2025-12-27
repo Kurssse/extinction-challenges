@@ -4,15 +4,15 @@
     "1": ["mini_lung_00"],
     "2": ["well_deck_2"],
     "3": ["well_deck_3"],
-    "4": ["cargo_area_mini_1", "cargo_area_mini_2"],
-    "5": ["cargo_area_mini_1", "cargo_area_mini_2", "cargo_area_mini_3"],
-    "6": ["cargo_area_mini_1", "cargo_area_mini_2", "cargo_area_mini_3"],
+    "4": ["cargo_area_mini_1", "cargo_area_mini_2", "cargo_area_mini_4"],
+    "5": ["cargo_area_mini_1", "cargo_area_mini_2", "cargo_area_mini_3", "cargo_area_mini_4"],
+    "6": ["cargo_area_mini_1", "cargo_area_mini_2", "cargo_area_mini_3", "cargo_area_mini_4"],
     "7": ["cargo_area_main"],
     "8": ["top_deck_mini_1", "top_deck_mini_2", "top_deck_mini_3"],
     "9": ["top_deck_mini_1", "top_deck_mini_2", "top_deck_mini_3"],
-    "10": ["lab_mini_1", "lab_mini_2", "lab_mini_3"],
-    "11": ["lab_mini_1", "lab_mini_2", "lab_mini_3"],
-    "12": ["lab_mini_1", "lab_mini_2", "lab_mini_3"]
+    "10": ["lab_mini_1", "lab_mini_2", "lab_mini_3", "lab_mini_4"],
+    "11": ["lab_mini_1", "lab_mini_2", "lab_mini_3", "lab_mini_4"],
+    "12": ["lab_mini_1", "lab_mini_2", "lab_mini_3", "lab_mini_4"]
   },
   "cycle_names": {
     "1": "First Hive",
@@ -38,5 +38,6 @@
     { "min": 8, "max": 12, "file": "images/Mayday3.png" }
   ]
 }
+
 
 
