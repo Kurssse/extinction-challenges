@@ -1,14 +1,7 @@
-// =======================
-// GLOBAL VARIABLES
-// =======================
-let challenges = [];        // Loaded challenge data
-let mapData = null;         // Loaded map data
-let usedChallenges = JSON.parse(localStorage.getItem("usedChallenges") || "[]"); // Used challenges
+let challenges = [];        
+let mapData = null;         
+let usedChallenges = JSON.parse(localStorage.getItem("usedChallenges") || "[]"); 
 
-
-// =======================
-// LOAD CHALLENGE DATA
-// =======================
 function loadChallenges(map, difficulty) {
     const path = `challenges/${map}_${difficulty}.json`;
     return fetch(path)
@@ -20,23 +13,15 @@ function loadChallenges(map, difficulty) {
         });
 }
 
-
-// =======================
-// LOAD MAP DATA
-// =======================
 function loadMapData(map) {
     return fetch(`maps/${map}.json`)
         .then(r => r.json())
         .then(data => {
             mapData = data;
-            populateCycles(); // Populate cycles when map changes
+            populateCycles(); 
         });
 }
 
-
-// =======================
-// POPULATE CYCLE SELECT
-// =======================
 function populateCycles() {
     const cycleSelect = document.getElementById("cycle");
     cycleSelect.innerHTML = "";
@@ -46,32 +31,28 @@ function populateCycles() {
 
     for (let i = min; i <= max; i++) {
         if (!names || !names[i]) {
-            throw new Error(`Missing cycle name for cycle ${i}`); // Enforce named cycles
+            throw new Error(`Missing cycle name for cycle ${i}`); 
         }
         const opt = document.createElement("option");
-        opt.value = i;           // numeric value for JS logic
-        opt.textContent = names[i]; // always display text
+        opt.value = i;           
+        opt.textContent = names[i]; 
         cycleSelect.appendChild(opt);
     }
 }
 
-
-// =======================
-// GET VALID CHALLENGES
-// =======================
 function getChallengesByHive(challenges, cycle, playerCount, cycleHives) {
     const result = {};
     const allowedHives = cycleHives[cycle] || [];
 
     for (const c of challenges) {
-        if (playerCount === 1 && !c.allowedinsolo) continue; // Solo restriction
-        if (!c.allowed_cycles.includes(cycle)) continue;       // Cycle restriction
+        if (playerCount === 1 && !c.allowedinsolo) continue; 
+        if (!c.allowed_cycles.includes(cycle)) continue;       
 
         for (const hive of c.allowed_hives) {
-            if (!allowedHives.includes(hive)) continue;      // Hive restriction
+            if (!allowedHives.includes(hive)) continue;      
 
             if (!result[hive]) result[hive] = [];
-            if (!usedChallenges.includes(c.ref)) {          // Exclude used challenges
+            if (!usedChallenges.includes(c.ref)) {          
                 result[hive].push(c.ref);
             }
         }
@@ -80,10 +61,6 @@ function getChallengesByHive(challenges, cycle, playerCount, cycleHives) {
     return result;
 }
 
-
-// =======================
-// RENDER TABLE OF CHALLENGES
-// =======================
 function renderTable(challengesByHive) {
     const container = document.getElementById("output");
     container.innerHTML = "";
@@ -91,12 +68,10 @@ function renderTable(challengesByHive) {
     const table = document.createElement("table");
     table.border = 1;
 
-    // Header row
     const header = table.insertRow();
     header.insertCell().textContent = "Hive";
     header.insertCell().textContent = "Challenges";
 
-    // Data rows
     for (const [hive, chList] of Object.entries(challengesByHive)) {
         const row = table.insertRow();
         row.insertCell().textContent = hive;
@@ -110,7 +85,6 @@ function renderTable(challengesByHive) {
             span.addEventListener("click", () => markUsed(ch));
             cell.appendChild(span);
 
-            // Add separator
             if (index < chList.length - 1) {
                 cell.appendChild(document.createTextNode(" | "));
             }
@@ -120,10 +94,6 @@ function renderTable(challengesByHive) {
     container.appendChild(table);
 }
 
-
-// =======================
-// MANAGE USED CHALLENGES
-// =======================
 function saveUsedChallenges() {
     localStorage.setItem("usedChallenges", JSON.stringify(usedChallenges));
 }
@@ -141,20 +111,14 @@ function renderUsedList() {
     container.innerHTML = usedChallenges.join(", ") || "None";
 }
 
-// Clear all used challenges
 document.getElementById("clear-used").addEventListener("click", () => {
     usedChallenges = [];
     saveUsedChallenges();
     renderUsedList();
 });
 
-// Initial render of used challenges
 renderUsedList();
 
-
-// =======================
-// MAP IMAGE HANDLING
-// =======================
 function getMapImage(cycle) {
     if (!mapData || !mapData.images) return "";
 
@@ -174,37 +138,28 @@ function updateMapImage(cycle) {
     }
 }
 
-
-// =======================
-// EVENT LISTENERS
-// =======================
-
-// Map selector changes → load new map and populate cycles
 document.getElementById("map").addEventListener("change", () => {
     const map = document.getElementById("map").value;
 
     loadMapData(map);
 });
 
-// Run button → load challenges and show table & map image
 document.getElementById("run").addEventListener("click", () => {
     const map = document.getElementById("map").value;
     const difficulty = document.getElementById("difficulty").value;
     const cycle = Number(document.getElementById("cycle").value);
     const playerCount = Number(document.getElementById("players").value);
 
-    // Ensure mapData is loaded
     const mapDataPromise = mapData ? Promise.resolve() : loadMapData(map);
 
     mapDataPromise.then(() => {
-        // Now mapData is guaranteed to exist
         return loadChallenges(map, difficulty);
     }).then(() => {
         const grouped = getChallengesByHive(
             challenges,
             cycle,
             playerCount,
-            mapData.cycle_hives // safe now
+            mapData.cycle_hives 
         );
         renderTable(grouped);
         updateMapImage(cycle);
@@ -212,4 +167,3 @@ document.getElementById("run").addEventListener("click", () => {
         console.error("Error loading map or challenges:", err);
     });
 });
-
