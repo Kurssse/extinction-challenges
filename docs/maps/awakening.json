@@ -1,0 +1,44 @@
+{
+  "map": "awakening",
+  "cycle_hives": {
+    "1": ["area_01_hive_00", "area_01_hive_01", "area_01_hive_02", "area_01_hive_03", "area_01_hive_04", "area_01_hive_05", "area_01_hive_06", "area_01_hive_07", "area_01_hive_08", "area_01_hive_09"],
+    "2": ["area_01_hive_00", "area_01_hive_01", "area_01_hive_02", "area_01_hive_03", "area_01_hive_04", "area_01_hive_05", "area_01_hive_06", "area_01_hive_07", "area_01_hive_08", "area_01_hive_09"],
+    "3": ["area_01_hive_00", "area_01_hive_01", "area_01_hive_02", "area_01_hive_03", "area_01_hive_04", "area_01_hive_05", "area_01_hive_06", "area_01_hive_07", "area_01_hive_08", "area_01_hive_09"],
+    "4": ["area_01_hive_00", "area_01_hive_01", "area_01_hive_02", "area_01_hive_03", "area_01_hive_04", "area_01_hive_05", "area_01_hive_06", "area_01_hive_07", "area_01_hive_08", "area_01_hive_09"],
+    "5": ["area_01_hive_00", "area_01_hive_01", "area_01_hive_02", "area_01_hive_03", "area_01_hive_04", "area_01_hive_05", "area_01_hive_06", "area_01_hive_07", "area_01_hive_08", "area_01_hive_09"],
+    "6": ["area_02_hive_01", "area_02_hive_02", "area_02_hive_03", "area_02_hive_04", "area_02_hive_05", "area_02_hive_06", "area_02_hive_07"],
+    "7": ["area_02_hive_01", "area_02_hive_02", "area_02_hive_03", "area_02_hive_04", "area_02_hive_05", "area_02_hive_06", "area_02_hive_07"],
+    "8": ["area_02_hive_01", "area_02_hive_02", "area_02_hive_03", "area_02_hive_04", "area_02_hive_05", "area_02_hive_06", "area_02_hive_07"],
+    "9": ["area_02_hive_01", "area_02_hive_02", "area_02_hive_03", "area_02_hive_04", "area_02_hive_05", "area_02_hive_06", "area_02_hive_07"],
+    "10": ["area_02_hive_01", "area_02_hive_02", "area_02_hive_03", "area_02_hive_04", "area_02_hive_05", "area_02_hive_06", "area_02_hive_07"],
+    "11": ["area_03_hive_01", "area_03_hive_02", "area_03_hive_03"],
+    "12": ["area_03_hive_01", "area_03_hive_02", "area_03_hive_03"],
+    "13": ["area_03_hive_01", "area_03_hive_02", "area_03_hive_03"]
+  },
+  "cycle_names": {
+    "1": "Area 1 Hive 1",
+    "2": "Area 1 Hive 2",
+    "3": "Area 1 Hive 3",
+    "4": "Area 1 Hive 4",
+    "5": "Area 1 Hive 5",
+    "6": "Area 2 Hive 1",
+    "7": "Area 2 Hive 2",
+    "8": "Area 2 Hive 3",
+    "9": "Area 2 Hive 4",
+    "10": "Area 2 Hive 5",
+    "11": "Area 3 Hive 1",
+    "12": "Area 3 Hive 2",
+    "13": "Area 3 Hive 3"
+  },
+  "cycle_ranges": {
+    "min": 1,
+    "max": 13
+  },
+   "images": [
+    { "min": 1, "max": 5, "file": "images/Awakening1.png" },
+    { "min": 6, "max": 10, "file": "images/Awakening2.png" },
+    { "min": 11, "max": 13, "file": "images/Awakening3.png" }
+  ]
+}
+
+
