@@ -1,0 +1,287 @@
+{
+  "map": "exodus",
+  "challenges": [
+    {
+      "ref": "spend_10k",
+      "allowedinsolo": true,
+      "allowed_cycles": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "spend_20k",
+      "allowedinsolo": false,
+      "allowed_cycles": [19, 21, 23],
+      "allowed_hives": ["conduit_gas_station_2", "conduit_parking_2", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "spend_no_money",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 8, 10, 12, 14, 16],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "no_reloads",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 8, 10, 12, 14, 16],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "no_abilities",
+      "allowedinsolo": true,
+      "allowed_cycles": [12, 14, 16, 18, 20, 22],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "no_stuck_drill",
+      "allowedinsolo": true,
+      "allowed_cycles": [7, 9, 11, 13, 15, 17],
+      "allowed_hives": ["conduit_gas_station_2", "conduit_parking_2", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "no_laststand",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 8, 10, 12, 14, 16],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "no_bleedout",
+      "allowedinsolo": false,
+      "allowed_cycles": [12, 14, 16, 18, 20, 22],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "pistols_only",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "shotguns_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "lmgs_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [14, 15, 16, 17, 20, 21, 22, 23],
+      "allowed_hives": ["conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "snipers_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [8, 9, 14, 15],
+      "allowed_hives": ["conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "smg_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "ar_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "semi_autos_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [8, 9, 10, 11, 14, 15, 16, 17],
+      "allowed_hives": ["conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "2_weapons_only",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "kill_10_with_traps",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 12, 13, 14, 15, 18, 19, 20, 21],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "stay_prone",
+      "allowedinsolo": true,
+      "allowed_cycles": [2, 3, 4, 5, 6, 8, 10, 12, 14, 16],
+      "allowed_hives": ["transition_left", "transition_upper_left", "transition_middle", "transition_upper_right", "transition_right", "conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "kill_10_with_turrets",
+      "allowedinsolo": true,
+      "allowed_cycles": [12, 13, 16, 17, 18, 19, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "kill_airborne_aliens",
+      "allowedinsolo": true,
+      "allowed_cycles":  [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "allowed_hives": ["conduit_gas_station_2", "conduit_parking_2", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "kill_10_in_30",
+      "allowedinsolo": true,
+      "allowed_cycles": [2, 3, 4, 5, 7, 9, 11, 13, 15, 17, 19, 21, 23],
+      "allowed_hives": ["transition_left", "transition_upper_left", "transition_middle", "transition_upper_right", "transition_right", "conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "long_shot",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 12, 13, 18, 19],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2"]
+    },
+    {
+      "ref": "focus_fire",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 10, 11, 12, 13, 16, 17, 18, 19, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "kill_marked",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 9, 11, 12, 13, 15, 17, 18, 19, 21, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_2", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "healthy_kills",
+      "allowedinsolo": true,
+      "allowed_cycles": [12, 14, 16, 18, 20, 22],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_parking_1", "conduit_rooftop_1"]
+    },
+    {
+      "ref": "kill_nodamage",
+      "allowedinsolo": true,
+      "allowed_cycles": [7, 9, 11, 13, 15, 17],
+      "allowed_hives": ["conduit_gas_station_2", "conduit_parking_2", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "bomber_preexplode",
+      "allowedinsolo": false,
+      "allowed_cycles": [3, 4, 5, 6, 7, 12, 13, 18, 19],
+      "allowed_hives": ["transition_left", "transition_upper_left", "transition_right", "conduit_gas_station_1", "conduit_gas_station_2"]
+    },
+    {
+      "ref": "melee_gargoyles",
+      "allowedinsolo": false,
+      "allowed_cycles": [6, 7, 12, 13],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2"]
+    },
+    {
+      "ref": "flying_aliens",
+      "allowedinsolo": true,
+      "allowed_cycles": [12, 13, 18, 19],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2"]
+    },
+    {
+      "ref": "higher_ground",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 10, 11, 12, 13, 16, 17, 18, 19, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "lower_ground",
+      "allowedinsolo": true,
+      "allowed_cycles": [7, 8, 9, 11, 13, 14, 15, 17, 19, 20, 21, 23],
+      "allowed_hives": ["conduit_gas_station_2", "conduit_rooftop_2", "conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "team_prone",
+      "allowedinsolo": false,
+      "allowed_cycles": [12, 14, 15, 16, 18, 20, 21, 22],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_rooftop_1", "conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "melee_5_goons_last",
+      "allowedinsolo": true,
+      "allowed_cycles": [6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_rooftop_1", "conduit_rooftop_2", "conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "stay_within_area_1",
+      "allowedinsolo": true,
+      "allowed_cycles": [1],
+      "allowed_hives": ["transition_left", "transition_middle", "transition_right"]
+    },
+    {
+      "ref": "stay_within_area_2",
+      "allowedinsolo": true,
+      "allowed_cycles": [2],
+      "allowed_hives": ["transition_left", "transition_middle", "transition_right", "transition_upper_left"]
+    },
+    {
+      "ref": "stay_within_area_3",
+      "allowedinsolo": true,
+      "allowed_cycles": [3],
+      "allowed_hives": ["transition_left", "transition_middle", "transition_right", "transition_upper_left"]
+    },
+    {
+      "ref": "stay_within_area_4",
+      "allowedinsolo": true,
+      "allowed_cycles": [4],
+      "allowed_hives": ["transition_left", "transition_middle", "transition_right", "transition_upper_left", "transition_upper_right"]
+    },
+    {
+      "ref": "stay_within_area_5",
+      "allowedinsolo": true,
+      "allowed_cycles": [5],
+      "allowed_hives": ["transition_left", "transition_middle", "transition_right", "transition_upper_left", "transition_upper_right"]
+    },
+    {
+      "ref": "kill_leper",
+      "allowedinsolo": true,
+      "allowed_cycles": [3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "allowed_hives": ["transition_left", "transition_upper_left", "transition_middle", "transition_upper_right", "transition_right", "conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_parking_2", "conduit_rooftop_1", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "melee_spitter",
+      "allowedinsolo": true,
+      "allowed_cycles": [7, 8, 9, 11, 13, 14, 15, 17],
+      "allowed_hives": ["conduit_gas_station_2", "conduit_rooftop_2", "conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "new_weapon",
+      "allowedinsolo": false,
+      "allowed_cycles": [12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23],
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_rooftop_1", "conduit_rooftop_2", "conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "50_percent_accuracy",
+      "allowedinsolo": true,
+      "allowed_cycles": [7, 9, 11, 13, 15, 17],
+      "allowed_hives": ["conduit_gas_station_2", "conduit_parking_2", "conduit_rooftop_2"]
+    },
+    {
+      "ref": "minion_preexplode",
+      "allowedinsolo": false,
+      "allowed_cycles": [3, 4, 5, 14, 15, 20, 21],
+      "allowed_hives": ["transition_left", "transition_upper_left", "transition_middle", "transition_right", "transition_upper_right", "conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "avoid_minion_explosion",
+      "allowedinsolo": true,
+      "allowed_cycles": [8, 9, 14, 15],
+      "allowed_hives": ["conduit_parking_1", "conduit_parking_2"]
+    },
+    {
+      "ref": "kill_ancestor",
+      "allowedinsolo": true,
+      "allowed_cycles": [24, 25, 26],
+      "allowed_hives": ["ancestor_left", "ancestor_right", "ancestor_middle"]
+    },
+    {
+      "ref": "weakpoint_damage",
+      "allowedinsolo": true,
+      "allowed_cycles": [24, 25, 26],
+      "allowed_hives": ["ancestor_left", "ancestor_right", "ancestor_middle"]
+    },
+    {
+      "ref": "no_ancestor_damage",
+      "allowedinsolo": true,
+      "allowed_cycles": [24, 25, 26],
+      "allowed_hives": ["ancestor_left", "ancestor_right", "ancestor_middle"]
+    }
+  ]
+}
