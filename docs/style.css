@@ -1,16 +1,13 @@
-/* ===== Dark Mode Base ===== */
 body {
   background-color: #121212;
   color: #e0e0e0;
   font-family: system-ui, sans-serif;
 }
 
-/* Headings */
 h1, h2, h3 {
   color: #ffffff;
 }
 
-/* Controls */
 select, button {
   background-color: #1e1e1e;
   color: #e0e0e0;
@@ -22,7 +19,6 @@ button:hover {
   background-color: #2a2a2a;
 }
 
-/* Tables */
 table {
   border-collapse: collapse;
   margin-top: 10px;
@@ -38,7 +34,6 @@ th {
   background-color: #1f1f1f;
 }
 
-/* Clickable challenges */
 td span {
   color: #7db4ff;
 }
@@ -47,12 +42,10 @@ td span:hover {
   text-decoration: underline;
 }
 
-/* Used challenges list */
 #used-list {
   color: #b0b0b0;
 }
 
-/* Map image */
 #map-image {
   max-width: 60%;
   height: auto;
@@ -60,7 +53,6 @@ td span:hover {
   margin-left: 20px;
 }
 
-/* Layout helper (if you already use flex) */
 .settings-container {
   display: flex;
   gap: 20px;
