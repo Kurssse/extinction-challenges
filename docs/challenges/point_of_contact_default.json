@@ -41,7 +41,7 @@
       "ref": "melee_5_goons",
       "allowedinsolo": true,
       "allowed_cycles": [6, 7, 8],
-      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4", "city_lung_5"]
+      "allowed_hives": ["city_lung_1", "city_lung_2", "city_lung_3", "city_lung_4"]
     },
     {
       "ref": "melee_spitter",

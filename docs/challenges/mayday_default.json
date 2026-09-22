@@ -142,7 +142,7 @@
     {
       "ref": "stay_within_area",
       "allowedinsolo": true,
-      "allowed_cycles": [4, 5, 6, 7, 8, 9, 10, 11, 12],
+      "allowed_cycles": [4, 5, 6, 8, 9, 10, 11, 12],
       "allowed_hives": ["cargo_area_mini_1", "cargo_area_mini_2", "cargo_area_mini_4", "top_deck_mini_1", "top_deck_mini_2", "top_deck_mini_3", "lab_mini_1", "lab_mini_2", "lab_mini_3", "lab_mini_4"]
     },
     {
