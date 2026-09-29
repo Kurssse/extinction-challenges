@@ -113,7 +113,7 @@
       "ref": "kill_10_with_turrets",
       "allowedinsolo": true,
       "allowed_cycles": [12, 13, 16, 17, 18, 19, 22, 23],
-      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_parking_1", "conduit_rooftop_1"]
+      "allowed_hives": ["conduit_gas_station_1", "conduit_gas_station_2", "conduit_rooftop_1"]
     },
     {
       "ref": "kill_airborne_aliens",

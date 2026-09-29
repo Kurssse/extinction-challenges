@@ -57,3 +57,23 @@ td span:hover {
   display: flex;
   gap: 20px;
 }
+
+#exodus-tracker {
+  margin-top: 16px;
+}
+
+#conduit-order {
+  display: grid;
+  gap: 6px;
+}
+
+#conduit-order label {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 8px;
+}
+
+#conduit-order select {
+  min-width: 150px;
+}

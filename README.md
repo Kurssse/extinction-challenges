@@ -1,1 +1,1 @@
-# kurssse.github.io/extinction-challenges
+# Kurssse.github.io
