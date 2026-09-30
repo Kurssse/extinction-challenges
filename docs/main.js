@@ -113,8 +113,6 @@ function getExodusAssignments() {
     const areaOccurrences = [0, 0, 0];
 
     for (let slot = 0; slot < 6; slot++) {
-        if (slot % 2 === 0) areaOccurrences.fill(0);
-
         const conduit = exodusConduits.find(item => item.value === exodusConduitOrder[slot]);
         if (!conduit) {
             assignments.push(null);
@@ -140,7 +138,9 @@ function updateCycleLabels() {
 
         const assignment = assignments[slot];
         const generator = mapData.cycle_names[option.value];
-        option.textContent = assignment`${generator}`;
+        option.textContent = assignment
+            ? `${generator}`
+            : generator;
     }
 }
 
